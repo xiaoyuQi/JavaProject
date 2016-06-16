@@ -1,11 +1,11 @@
 
-ä¿®æ”¹æ³¨æ„ï¼š
+ĞŞ¸Ä×¢Òâ£º
 
-1) æ·»åŠ äº†æ–°çš„æ¨¡å—ï¼Œè¦åœ¨POMä¸­maven-shade-pluginçš„<artifactSet>ä¸­æ·»åŠ <include> 
+1) Ìí¼ÓÁËĞÂµÄÄ£¿é£¬ÒªÔÚPOMÖĞmaven-shade-pluginµÄ<artifactSet>ÖĞÌí¼Ó<include>
 
-2) æ·»åŠ äº†æ–°çš„æ‰©å±•ç‚¹ï¼Œè¦åœ¨POMä¸­maven-shade-pluginåŠ ä¸Š<transformer>
- 
-æœç´¢å‡º æ‰©å±•ç‚¹é…ç½®æ–‡ä»¶ çš„å‘½ä»¤
+2) Ìí¼ÓÁËĞÂµÄÀ©Õ¹µã£¬ÒªÔÚPOMÖĞmaven-shade-plugin¼ÓÉÏ<transformer>
+
+ËÑË÷³ö À©Õ¹µãÅäÖÃÎÄ¼ş µÄÃüÁî
 
 $ find . -wholename */META-INF/dubbo/* -type f | grep -vF /test/ | awk -F/ '{print $NF}' | sort -u
 com.alibaba.dubbo.cache.CacheFactory

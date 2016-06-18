@@ -54,8 +54,13 @@ public class ZkclientZookeeperClient extends AbstractZookeeperClient<IZkChildLis
 
 	public void delete(String path) {
 		try {
-			client.delete(path);
+			 if(client.exists(path)){
+				 client.delete(path);
+			 }else{
+				 System.out.println("节点不存在:"+path);
+			 }
 		} catch (ZkNoNodeException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 
